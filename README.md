@@ -22,6 +22,10 @@ A modern, scalable Learning Management System built using the latest web technol
 - 📬 Email login with Resend integration
 - 🗄️ Database powered by PostgreSQL via Prisma
 
+## 👀 Currently working on 
+- Securing application from bots and applyying rate limit using archJe
+
+
 ## ✅ Work Done So Far
 
 - ✅ Project setup and initialization
