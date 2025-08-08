@@ -48,5 +48,7 @@ A modern, scalable Learning Management System built using the latest web technol
 - ✅ Secured the application from bots and applied rate limiting using [Arcjet](https://arcjet.com)
 - ✅ Worked on the landing page
 - ✅ Customized the ShadCN default theme using [TweakCN](https://tweakcn.com)
-
-
+- ✅ Customised LeftSideBar for Admin Dashboard
+      - Added user account links
+      - Integrated notifications
+      - Implemented quick access buttons

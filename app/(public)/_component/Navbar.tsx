@@ -16,6 +16,7 @@ const navigationItems = [
 function Navbar() {
 
     const {data : session, isPending} = authClient.useSession();
+    // console.log(session)
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur-[backdrop-filter]:bg-background/60">
