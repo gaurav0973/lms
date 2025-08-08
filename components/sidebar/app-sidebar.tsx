@@ -1,5 +1,5 @@
-"use client"
-import * as React from "react"
+"use client";
+import * as React from "react";
 import {
   IconCamera,
   IconChartBar,
@@ -12,11 +12,11 @@ import {
   IconSearch,
   IconSettings,
   IconUsers,
-} from "@tabler/icons-react"
-import Logo from "@/public/logo.png"
-import { NavMain } from "@/components/nav-main"
-import { NavSecondary } from "@/components/nav-secondary"
-import { NavUser } from "@/components/nav-user"
+} from "@tabler/icons-react";
+import Logo from "@/public/logo.png";
+import { NavMain } from "@/components/sidebar/nav-main";
+import { NavSecondary } from "@/components/sidebar/nav-secondary";
+import { NavUser } from "@/components/sidebar/nav-user";
 import {
   Sidebar,
   SidebarContent,
@@ -25,9 +25,9 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
-import Link from "next/link"
-import Image from "next/image"
+} from "@/components/ui/sidebar";
+import Link from "next/link";
+import Image from "next/image";
 
 const data = {
   navMain: [
@@ -122,12 +122,11 @@ const data = {
       icon: IconSearch,
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="offcanvas" {...props}>
-      
       {/* navheader */}
       <SidebarHeader>
         <SidebarMenu>
@@ -162,5 +161,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavUser />
       </SidebarFooter>
     </Sidebar>
-  )
+  );
 }
