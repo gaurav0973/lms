@@ -52,3 +52,9 @@ A modern, scalable Learning Management System built using the latest web technol
       - Added user account links
       - Integrated notifications
       - Implemented quick access buttons
+- ✅ Created Course Creation Page
+      - handling form validation
+      - [Video](https://youtu.be/0VqijABRq5Y?si=pnXRG-mX29s5drL7)
+      - [GitHub](https://github.com/ski043/form-validation)
+      - [React Hook Form](https://react-hook-form.com/)
+      - [ShadCN Form Documentation](https://ui.shadcn.com/docs/components/form)
