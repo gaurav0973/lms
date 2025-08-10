@@ -150,7 +150,7 @@ function CreateCoursePage() {
                   <FormItem>
                     <FormLabel>Description</FormLabel>
                     <FormControl>
-                      <RichTextEditor />
+                      <RichTextEditor field={field} />
                       {/* <Textarea
                         placeholder="Description"
                         className="min-h-[120px]"
