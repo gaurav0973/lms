@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/card";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { Form } from "@/components/ui/form";
 import { courseCategories, courseLevels, courseSchema, courseSchemaType, courseStatus } from "@/lib/zodSchema";
 import {
+  Form,
   FormControl,
   FormField,
   FormItem,
@@ -35,7 +35,7 @@ function CreateCoursePage() {
       price: 0,
       duration: 0,
       level: "Beginner",
-      category: "",
+      category: "Development",
       smallDescription: "",
       slug: "",
       status: "Draft",
@@ -240,10 +240,13 @@ function CreateCoursePage() {
                   <FormItem>
                     <FormLabel>Duration(Hours)</FormLabel>
                     <FormControl>
-                      <Input placeholder="Duration" 
-                      type="number"
-                      min={0}
-                      {...field} />
+                      <Input 
+                        placeholder="Duration" 
+                        type="number"
+                        min={0}
+                        {...field}
+                        onChange={(e) => field.onChange(Number(e.target.value))}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -258,10 +261,13 @@ function CreateCoursePage() {
                   <FormItem>
                     <FormLabel>Price(Rupees)</FormLabel>
                     <FormControl>
-                      <Input placeholder="Price" 
-                      type="number"
-                      min={0}
-                      {...field} />
+                      <Input 
+                        placeholder="Price" 
+                        type="number"
+                        min={0}
+                        {...field}
+                        onChange={(e) => field.onChange(Number(e.target.value))}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
