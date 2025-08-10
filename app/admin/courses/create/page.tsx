@@ -24,6 +24,7 @@ import { Input } from "@/components/ui/input";
 import slugify from "slugify";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { RichTextEditor } from "@/components/rich-text-editor/Editor";
 
 function CreateCoursePage() {
   const form = useForm<courseSchemaType>({
@@ -107,6 +108,7 @@ function CreateCoursePage() {
                   )}
                 />
 
+
                 <Button
                   type="button"
                   className="w-fit"
@@ -120,6 +122,7 @@ function CreateCoursePage() {
                 </Button>
               </div>
 
+              {/* small description */}
               <FormField
                 control={form.control}
                 name="smallDescription"
@@ -138,6 +141,8 @@ function CreateCoursePage() {
                 )}
               />
 
+
+              {/* description */}
               <FormField
                 control={form.control}
                 name="description"
@@ -145,17 +150,19 @@ function CreateCoursePage() {
                   <FormItem>
                     <FormLabel>Description</FormLabel>
                     <FormControl>
-                      <Textarea
+                      <RichTextEditor />
+                      {/* <Textarea
                         placeholder="Description"
                         className="min-h-[120px]"
                         {...field}
-                      />
+                      /> */}
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
 
+              {/* thumbnail image */}
               <FormField
                 control={form.control}
                 name="fileKey"
