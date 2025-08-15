@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { CloudUploadIcon, ImageIcon } from "lucide-react";
 import { Button } from "../ui/button";
-import { type } from '../../lib/generated/prisma/index';
 
 
 export function RenderEmptyState({isDragActive}: {isDragActive: boolean}) {
