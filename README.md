@@ -58,3 +58,5 @@ A modern, scalable Learning Management System built using the latest web technol
       - [GitHub](https://github.com/ski043/form-validation)
       - [React Hook Form](https://react-hook-form.com/)
       - [ShadCN Form Documentation](https://ui.shadcn.com/docs/components/form)
+- ✅ Implemented the Image upload (Drag and drop) feature in the course creation page
+    - [React Dropzone](https://react-dropzone.js.org/)

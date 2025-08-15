@@ -25,6 +25,7 @@ import slugify from "slugify";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RichTextEditor } from "@/components/rich-text-editor/Editor";
+import { Uploader } from "@/components/file-uploader/Uploader";
 
 function CreateCoursePage() {
   const form = useForm<courseSchemaType>({
@@ -151,11 +152,6 @@ function CreateCoursePage() {
                     <FormLabel>Description</FormLabel>
                     <FormControl>
                       <RichTextEditor field={field} />
-                      {/* <Textarea
-                        placeholder="Description"
-                        className="min-h-[120px]"
-                        {...field}
-                      /> */}
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -170,7 +166,8 @@ function CreateCoursePage() {
                   <FormItem>
                     <FormLabel>Thumbnail Image</FormLabel>
                     <FormControl>
-                      <Input placeholder="Thumbnail url" {...field} />
+                      <Uploader />
+                      {/* <Input placeholder="Thumbnail url" {...field} /> */}
                     </FormControl>
                     <FormMessage />
                   </FormItem>
